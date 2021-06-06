@@ -1,3 +1,22 @@
+window.addEventListener("keydown", (e) => handleKeyPress(e));
+const handleKeyPress = (e) => {
+  console.log(e.which);
+  switch (e.which) {
+    case 65:
+      playA4();
+      break;
+    case 83:
+      playB4();
+      break;
+    case 68:
+      playC4();
+      break;
+    case 70:
+      playC5();
+      break;
+  }
+};
+
 //JavaScript file
 	//Sound Play
 	const C4 = new Audio("sounds/C4.mp3");
